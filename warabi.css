@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    /*overflow: hidden;*/
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main_back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("img/warabiKing.jpg");
+    background-repeat: repeat;
+    background-size: 10rem 10rem;
+
+    animation: scroll 16s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 10rem 0;
+    }
+}
+
+.main_text {
+    position: absolute;
+    top: 0;
+    height: max-content;
+    width: calc(100% - 6rem);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.circleImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    border: solid 2px black;
+}
